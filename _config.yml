@@ -19,6 +19,8 @@ title: Just the Docs
 description: A Jekyll theme for documentation
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mmol93.run.goorm.io" # the base hostname & protocol for your site, e.g. http://example.com
+# 구름에서 접속 시 https://mmol93.run.goorm.io로 접속 가능
+# ↑ 수정은 프로젝트 - [실행과 URL포트]에서 가능
 
 permalink: pretty
 
