@@ -6,4 +6,4 @@ has_children: true
 permalink: /docs/it-category
 ---
 
-aaaa
+개발 내용 이외의 정보를 담고 있습니다.
