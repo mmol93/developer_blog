@@ -16,13 +16,16 @@ parent: Android(코틀린)
 Firebase의 Analytics를 셋업하고 사용해본다
 Firebase 프로젝트 셋업 방법은 설명하지 않는다
 
+------------------
 # 애널리틱스 셋업 방법
 1. 상단의 [Tool] -> [Firebase] -> 메뉴에서 [Analytics] 선택 -> Get started with Google Analytics[Kotlin]을 선택한다
 2. 그 이후에는 설명서를 보고 따라하면 된다
 
+-------------------
 # 필요한 dependency
 `implementation 'com.google.firebase:firebase-analytics:21.2.0'`
 
+------------------
 # 코드 작성
 MainActivity가 있고 그 안에 FirstFragment 라는 Fragment가 있는 레이아웃 구조의 앱임
 * MainActivity
@@ -89,6 +92,7 @@ class FirstFragment : Fragment() {
 
 <img src="https://user-images.githubusercontent.com/69494230/202603241-0d83af65-7d63-4031-814a-84502ae328d8.jpg" width="200">
 
+--------------------
 # 테스트 방법
 * 테스트 방법으로는 DebugView를 사용한다
    * adb를 사용한 테스트도 있지만 DebugView가 직관적이고 확실하기 때문에 이 방법을 사용한다

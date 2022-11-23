@@ -7,6 +7,7 @@ parent: Android(코틀린)
 # 개요
 Jetpack의 Navigation을 사용하여 화면 이동을 했을 때 Activity, Fragment가 정확히 어떤 타이밍에 어떻게 lifecycle이 순환하는지 확인한다
 
+-----------------
 # 필요한 종속 항목 선언
 https://developer.android.com/jetpack/androidx/releases/lifecycle#kotlin
 
@@ -24,6 +25,7 @@ implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 ```
 
+-------------------
 # Activity
 Activitym이 라이프 사이클 개요
 
@@ -117,6 +119,7 @@ class MainActivity : AppCompatActivity() {
 ### 5. 결론
 Activity의 lifecycle이 먼저 출력되고 그 다음에 lifecycleScope의 lifecycle이 출력된다
 
+-------------------
 # Fragment
 주로 Fragment에서 발생하는 문제는 다른 Fragment에서 돌아왔을 때 observe 하고 있던 데이터를
 다시 불러와서 **같은 데이터를 2번 set 하는 문제가 많다**

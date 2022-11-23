@@ -12,9 +12,11 @@ parent: Android(코틀린)
 
 그럴 때 사용한 것이 remote config입니다.
 
+---------------------
 # 개요
 remote config를 사용해서 데이터를 받아서 출력해본다
 
+-------------------------
 # remote config 셋팅
 
 ## firebase 콘솔 셋업

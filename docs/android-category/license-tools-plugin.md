@@ -21,6 +21,8 @@ parent: Android(코틀린)
 
 [https://github.com/cookpad/LicenseToolsPlugin](https://github.com/cookpad/LicenseToolsPlugin)
 
+----------------------
+
 # Dependency 선언
 
 ```kotlin
@@ -39,6 +41,7 @@ buildscript {
 // app 수준의 gradle에서 선언
 apply plugin: "com.cookpad.android.plugin.license-tools"
 ```
+-------------
 
 # 사용 방법
 
@@ -62,6 +65,8 @@ apply plugin: "com.cookpad.android.plugin.license-tools"
     2. 성공 했다면 `./app/src/main/assets/licenses.html` 파일이 만들어진 것을 화인할 수 있다
         - 보기 설정을 `Android`가 아닌 `Project`로 해야 보인다
 
+-------------------
+
 ## 위 과정에서 발생할 수 있는 문제나 주의 사항
 
 - licenses 파일들이 생성되는 과정
@@ -75,6 +80,8 @@ apply plugin: "com.cookpad.android.plugin.license-tools"
     - 또는 `copyrightHolder`에 값을 넣어준다
         - 처음 생성되었다면 `copyrightHolder` 에는 *`#COPYRIGHT_HOLDER#`* 같은 무의미한 값이 들어있다
         - 하지만 이를 삭제하고 Google 같이 실제 해당 라이브러리를 소유하고 있는 or 제작한 회사 or 개인의 이름 등을 넣어두면된다
+
+--------------
 
 ## 생성된 html 파일을 보여주기
 
