@@ -1,6 +1,6 @@
 ---
 layout: default
-title: just, fromArray, FromIterable Operator
+title: Just, FromArray, FromIterable Operator
 parent: Rx-Android
 ---
 
