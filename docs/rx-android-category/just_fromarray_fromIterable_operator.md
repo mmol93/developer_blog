@@ -63,7 +63,7 @@ private val arrayNum2 =arrayOf(10, 20, 30, 40)
 fun fromOperator() {
     val observable = Observable.fromArray(arrayNum, arrayNum2)
 
-    val observer = object : Observer<Array<Int>> {
+    val observer = object: Observer<Array<Int>> {
         override fun onSubscribe(d: Disposable) {
             Timber.d("onSubscribe")
         }
@@ -96,7 +96,7 @@ private val mListNum =mutableListOf(1, 2, 3, 4, 5)
 ``` kotlin
 fun fromIterableOperator() {
     val observable = Observable.fromIterable(mListNum)
-    val observer = object : Observer<Int>{
+    val observer = object: Observer<Int>{
         override fun onSubscribe(d: Disposable) {
             Timber.d("onSubscribe")
         }
