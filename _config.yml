@@ -159,7 +159,8 @@ callouts:
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
+# 애널리틱스 - 설정 - 속성값을 넣으면된다(속성값은 숫자로 되어있거나 UA-****로 시작되는 문자열임)
+ga_tracking: 343968487
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
