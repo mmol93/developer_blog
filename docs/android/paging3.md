@@ -5,6 +5,9 @@ parent: Android(코틀린)
 ---
 
 # 서론
+Paging3를 사용하여 페이징 기능을 사용하는 방법에 대해 예시로 알아본다
+Paging3를 사용했을 때 어떠한 장점이 있고 어떤 단점이 있는지 알아본다
+
 해당 프로젝트에선 Hilt를 사용했습니다.
 Hilt에 대한 코드는 생략하겠습니다.
 그 외에 관계있는 코드는 가능한한 올려보겠습니다!
@@ -28,7 +31,7 @@ Hilt에 대한 코드는 생략하겠습니다.
 * Kotlin 코루틴 및 Flow뿐만 아니라 [LiveData](https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData?hl=ko) 및 RxJava를 최고 수준으로 지원합니다.
 * 새로고침 및 재시도 기능을 포함하여 오류 처리를 기본으로 지원합니다.
 
-### 단, Groupie와 사용할 수 없다
+### Paging3는 Groupie 라이브러리와 같이 사용할 수 **없다**
 * 현재 Groupie 라이브러리에서 paing 라이브러리를 지원하지 않음(2022.12.01)
 
 ------
@@ -75,7 +78,7 @@ dependencies {
   implementation "androidx.paging:paging-compose:1.0.0-alpha17"
 }
 ```
-# PaginSource 정의
+# Paging3의 PaginSource 정의
 PagingSource<Key, Value>에는 Key와 Value의 두 유형 매개변수가 있습니다. 
 키는 데이터를 로드하는 데 사용되는 식별자를 정의하며, 값은 데이터 자체의 유형입니다. 
 예를 들어 Int 페이지 번호를 [Retrofit](https://square.github.io/retrofit/)에 전달하여 네트워크에서 User 객체의 페이지를 로드하는 경우
@@ -290,7 +293,7 @@ class PagingViewHolder(
 
 -----
 # 후기
-음.... 참 좋긴한데 Groupie를 쓸 수 없다는 점이 좀 크네요 ㅠㅠ
+Paging3가 참 좋긴한데 Groupie를 쓸 수 없다는 점이 좀 크네요 ㅠㅠ
 Groupie를 포기하고 이걸 쓰기에는 Groupie를 쓰는 편이 더 편하기 때문에 지원하기 전까지는 안쓸거 같습니다...(아쉽)
 
 -----

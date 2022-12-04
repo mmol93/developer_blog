@@ -17,7 +17,7 @@ jekyll로 만든 정적 블로그의 경우 sitemap을 간단하게 만들 수 �
 하지만 jekyll로 만든 블로그도 그와 비슷하게 자동으로 sitemap을 만들 수 있습니다!
 
 
-# sitemap.xml 파일 생성하기
+# sitemap.xml 파일 만들기
 
 １．루트 디렉토리에서 커맨드 라인에 아래와 같이 입력한다.
 
@@ -31,7 +31,7 @@ jekyll로 만든 정적 블로그의 경우 sitemap을 간단하게 만들 수 �
 주의할 점은 <loc> 부분에 자신의 블로그 baseURL을 입력해야한다
 (예: https://app.netlify.com)
 
-# 생성된 sitemap 확인하기
+# 만들어진 sitemap 확인하기
 
 이렇게 등록했으면 직접 확인할 수 있다
 방금 입력한 `"자신의 블로그baseURL"/sitemap.xml`로 들어가면 
@@ -39,7 +39,7 @@ jekyll로 만든 정적 블로그의 경우 sitemap을 간단하게 만들 수 �
 
 ![image](https://user-images.githubusercontent.com/69494230/205417267-1b338004-4d81-411c-a39d-2e791a54ff3c.png)
 
-# 생성된 sitemap을 구글 웹마스터에 등록하기
+# 만들어진 sitemap을 구글 웹마스터에 등록하기
 
 생성한 sitemap은 구글 웹마스터 등에 등록하여 사용할 수 있습니다.
 (현재 위와 같은 방법을 사용해서 등록했는데 문제없이 잘 색인되고 있습니다.)

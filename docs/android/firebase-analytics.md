@@ -4,16 +4,16 @@ title: firebase의 analytics 사용해보기(기초)
 parent: Android(코틀린)
 ---
 
-안드로이드 앱을 개발하는 사람이라면 거의 100% 쓰는 기능이라고 할 수 있습니다.
+firebase의 analytics는 안드로이드 앱을 개발하는 사람이라면 거의 100% 쓰는 기능이라고 할 수 있습니다.
 
 사용자가 언제 앱을 사용했고, 어느 화면을 보고, 어떤 버튼을 클릭했는지
 
 심지어는 언제 앱을 삭제했는지도 알려줍니다.
 
-그렇기 때문에 사실상 앱 개발을 할 때 필수로 들어가야하는 기능 중 하나입니다.
+그렇기 때문에 firebase의 애널리틱스는 앱 개발을 할 때 필수로 들어가야하는 기능 중 하나입니다.
 
 # 개요
-Firebase의 Analytics를 셋업하고 사용해본다
+Firebase Analytics를 셋업하고 사용해본다
 Firebase 프로젝트 셋업 방법은 설명하지 않는다
 
 ------------------
@@ -22,7 +22,7 @@ Firebase 프로젝트 셋업 방법은 설명하지 않는다
 2. 그 이후에는 설명서를 보고 따라하면 된다
 
 -------------------
-# 필요한 dependency
+# firebase의 analytics에 필요한 dependency
 `implementation 'com.google.firebase:firebase-analytics:21.2.0'`
 
 ------------------
@@ -88,7 +88,7 @@ class FirstFragment : Fragment() {
 }
 ```
 
-* 테스트에서 사용한 화면 모습
+* firebase의 analytics 테스트에서 사용한 화면 모습
 
 <img src="https://user-images.githubusercontent.com/69494230/202603241-0d83af65-7d63-4031-814a-84502ae328d8.jpg" width="200">
 

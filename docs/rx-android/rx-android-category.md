@@ -3,7 +3,7 @@ layout: default
 title: Rx-Android
 nav_order: 5
 has_children: true
-permalink: /docs/rx-android-category
+permalink: /docs/rx-android
 ---
 
 Rx-Java & Rx-Kotlin & Rx-Android에 대한 내용을 담고 있습니다.
