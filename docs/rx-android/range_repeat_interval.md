@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Range, Repeat, Interval Operator
+title: Range, Repeat, Interval 사용방법
 parent: Rx-Android
 ---
 
@@ -32,12 +32,13 @@ Operators.rangeOperator().subscribe(
             }
         )
 ```
+### Range Operator 사용 결과
 
 <img width="355" alt="image" src="https://user-images.githubusercontent.com/69494230/204238599-c8d479a9-f8fa-45e5-9420-3fbf22b21d97.png">
 
 ------
 # Repeat Operator
-* Observe 자체를 반복할 수 있게 해준다
+* Repeat Operator를 사용하면 Observe 자체를 반복할 수 있게 해준다
 
 ``` kotlin
 fun repeatOperator(): Observable<Int> {
@@ -57,12 +58,13 @@ Operators.repeatOperator().subscribe(
             }
         )
 ```
+### Repeat Operator 사용 결과
 
 <img width="337" alt="image" src="https://user-images.githubusercontent.com/69494230/204238955-f31f98b1-bdd4-42f0-9837-a997b12e6073.png">
 
 ------
 # Interval Operator
-* 정해진 시간 만큼 반복하여 정해진 횟수를 반복했을 때 subscribe할 수 있다
+* Interval Operator은 정해진 시간 만큼 반복하여 정해진 횟수를 반복했을 때 subscribe할 수 있다
 * 이러한 기능은 정해진 시간마다 위치를 갱신해야하거나 페이지를 갱신하는 작업에 유용함
 
 ``` kotlin
@@ -84,4 +86,5 @@ Operators.intervalOperator().subscribe(
         )
 ```
 
+### Interval Operator 사용 결과
 <img width="312" alt="image" src="https://user-images.githubusercontent.com/69494230/204239271-32bfa85b-fa56-4443-bc40-5398e67b5ed1.png">

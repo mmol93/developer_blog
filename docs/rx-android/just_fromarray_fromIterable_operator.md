@@ -7,6 +7,9 @@ parent: Rx-Android
 원하고는 operator를 찾고 싶다면 검색을 하면됩니다!
 
 # 개요
+
+Just, FromArray, FromIterable Operator가 어떤 기능하고 어떻게 사용할 수 있는지 예시를 통해 알아본다
+
 1. just Operator를 알아본다
 2. fromArray Operator를 알아본다
 3. FromIterable Operator를 알아본다
@@ -44,7 +47,7 @@ val observer = object: Observer<Int>{
 // subscribe 하기
 observable.subscribe(observer)
 ```
-### 실행 결과
+### just Operator의 실행 결과
 
 <img width="291" alt="image" src="https://user-images.githubusercontent.com/69494230/203692773-b358bd65-c4fd-44c5-9db1-c42c97f76117.png">
 
@@ -116,6 +119,6 @@ fun fromIterableOperator() {
     observable.subscribe(observer)
 }
 ```
-### 출력 결과
+### FromIterable Operator 출력 결과
 
 <img width="287" alt="image" src="https://user-images.githubusercontent.com/69494230/203744797-8b746278-841e-4eab-80c8-eee066485c4d.png">

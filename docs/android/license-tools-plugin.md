@@ -12,7 +12,7 @@ parent: Android(코틀린)
 
 어떤 라이브러리인지, 어디서 가져왔는지를 다 공개해야하니까요....
 
-그럴 때!! 이 라이브러리를 사용하면 간단하게 현재 프로젝트에서 사용중인
+그럴 때!! LicenseToolsPlugin을 라이브러리를 사용하면 간단하게 현재 프로젝트에서 사용중인
 
 라이브러리들의 라이센스를 공개할 수 있습니다.
 
@@ -21,9 +21,13 @@ parent: Android(코틀린)
 
 [https://github.com/cookpad/LicenseToolsPlugin](https://github.com/cookpad/LicenseToolsPlugin)
 
+참고로 LicenseToolsPlugin는 일본의 cookpad라는 회사에서 만든 오픈소스 개발로
+
+다양한 해당 회사 사람뿐 아니라 다양한 사람들이 모여서 개발한 라이브러리입니다.
+
 ----------------------
 
-# Dependency 선언
+# LicenseToolsPlugin는 Dependency 선언
 
 ```kotlin
 // project 수준의 gradle에서 선언
@@ -67,7 +71,7 @@ apply plugin: "com.cookpad.android.plugin.license-tools"
 
 -------------------
 
-## 위 과정에서 발생할 수 있는 문제나 주의 사항
+## LicenseToolsPlugin 셋업 시 발생할 수 있는 문제나 주의 사항
 
 - licenses 파일들이 생성되는 과정
     1. `updateLicenses`를 통해 `licenses.yml` 파일을 생성한다
@@ -80,6 +84,9 @@ apply plugin: "com.cookpad.android.plugin.license-tools"
     - 또는 `copyrightHolder`에 값을 넣어준다
         - 처음 생성되었다면 `copyrightHolder` 에는 *`#COPYRIGHT_HOLDER#`* 같은 무의미한 값이 들어있다
         - 하지만 이를 삭제하고 Google 같이 실제 해당 라이브러리를 소유하고 있는 or 제작한 회사 or 개인의 이름 등을 넣어두면된다
+
+- LicenseToolsPlugin가 모든 라이브러리를 셋업을 해주는 것은 아니다
+    - 일단 출력한 뒤 실제로 앱을 통해 어떠한 라이브러리에 html로 자동으로 셋업해줬는지 확인하고 사용해야한다.
 
 --------------
 

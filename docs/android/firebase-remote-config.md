@@ -30,12 +30,12 @@ remote config를 사용해서 데이터를 받아서 출력해본다
    * Data type: 어떤 형태의 데이터를 넘길지(이거도 앱 쪽에서 지정해야할 필요가 있음)
    * default value: 어떤 데이터를 넘겨줄지 적는다
 
-4. 테스트로 2개 정도 적어서 넣어봤다
+4. remote config 테스트로 2개 정도 적어서 넣어봤다
 
 <img src="https://user-images.githubusercontent.com/69494230/202617329-fb47dcfc-538d-4317-811d-12fba4c0dab5.png" width="500">
 
 ### 코드 작성
-* Dependency 셋업
+* remote config에 필요한 Dependency 셋업
 `implementation 'com.google.firebase:firebase-config-ktx:21.2.0'`
 
 * 앱을 처음 켰을 때 remote config로 데이터를 가져와서 해당 데이터를 출력하게 한다
@@ -70,7 +70,7 @@ private fun initRemoteConfigData(){
 
 <img src="https://user-images.githubusercontent.com/69494230/202617767-4223e950-3696-49e3-bf62-0556123c371f.png" width="400">
 
-### 음? 이거 클라우드 Storage 같은거로도 할 수 있는거 아님?
+### 음? remote config뿐 아니라 클라우드 Storage 같은거로도 할 수 있는거 아님?
 
 네, 분명 비슷한 점도 있습니다
 하지만, 다른 점이 더 많습니다!

@@ -16,7 +16,7 @@
 
 # 여기 자신의 블로그에 맞게 재정의 해야함
 title: 옆동네 개발자
-description: 안드로이드와 코틀린 그리고 조금의 잡담을 위한 블로그
+description:
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mmoloid.co.kr" # the base hostname & protocol for your site, e.g. http://example.com
 # 구름에서 접속 시 https://mmol93.run.goorm.io로 접속 가능

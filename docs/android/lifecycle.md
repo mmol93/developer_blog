@@ -27,7 +27,7 @@ implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
 -------------------
 # Activity
-Activitym이 라이프 사이클 개요
+Activity에서 화면 이동을 했을 때 Acticity에서 라이프사이클이 어떻게 변화하는지 알아본다
 
 <img width="832" alt="image" src="https://user-images.githubusercontent.com/69494230/181199520-874daaa1-acdb-4fda-a685-54129c4eb0fa.png">
 
@@ -94,21 +94,21 @@ class MainActivity : AppCompatActivity() {
 
 각 lifecycle이 시작될 때 로그를 남기도록 했다
 
-### 1. 처음 실행했을 때 결과
+### 1. 처음 실행했을 때 라이프 사이클 변화
 * 기본적으로 각각의 override 함수가 먼저 호출되고 그 다음에 각각의 상태에 대한 lifecycleScope가 호출된다
 * onCreate -> onStart -> onResume
 
 ![image](https://user-images.githubusercontent.com/69494230/181203131-c906d8ef-27ec-4cfb-bcf9-5f5b7aea75c5.png)
 
-### 2. 현재 실행중인 앱 확인 화면(네모 버튼)으로 갔다가 돌아왔을 때
+### 2. 현재 실행중인 앱 확인 화면(네모 버튼)으로 갔다가 돌아왔을 때 라이프 사이클 변화
 * 이 때는 lifecycle에 아무런 영향을 끼치지 않는다
 
-### 3. Home 화면으로 갔다가 돌아왔을 때
+### 3. Home 화면으로 갔다가 돌아왔을 때 라이프 사이클 변화
 * (홈으로 이동) -> onPause -> (돌아옴) -> onStart ->onResume
 
 ![image](https://user-images.githubusercontent.com/69494230/201503669-be0904e9-fa48-4829-bf1b-c5d759b15d92.png)
 
-### 4. 완전히 다른 화면을 봤다가 돌아왔을 때
+### 4. 완전히 다른 화면을 봤다가 돌아왔을 때 라이프 사이클 변화
 * onPause -> onStart -> onResume
 
 ![image](https://user-images.githubusercontent.com/69494230/181203229-192fc0c1-a345-421a-83f1-437f66d03da6.png)
@@ -121,6 +121,8 @@ Activity의 lifecycle이 먼저 출력되고 그 다음에 lifecycleScope의 lif
 
 -------------------
 # Fragment
+Fragment에서 화면 이동을 했을 때 라이프 사이클의 변화를 알아본다
+
 주로 Fragment에서 발생하는 문제는 다른 Fragment에서 돌아왔을 때 observe 하고 있던 데이터를
 다시 불러와서 **같은 데이터를 2번 set 하는 문제가 많다**
 lifecycle을 확인하고 이를 방지하기 위핸 대책을 생각해본다
@@ -183,24 +185,24 @@ class FirstFragment : Fragment() {
 }
 ```
 
-### 1. 첫 번째 프래그먼트를 열었을 때 결과
+### 1. 첫 번째 프래그먼트를 열었을 때 라이프 사이클 변화
 * onViewCreated -> onStart -> onResume
 
 <img width="558" alt="image" src="https://user-images.githubusercontent.com/69494230/181679309-8cf22ab5-1c52-45f7-8515-dad3ffc63df0.png">
 
-### 2. Navigation을 사용하여 첫 번째 프래그먼트에서 두 번째 프래그먼트로 이동했을 때 결과
+### 2. Navigation을 사용하여 첫 번째 프래그먼트에서 두 번째 프래그먼트로 이동했을 때 라이프 사이클 변화
 * graph로 이동했을 때는 이전 fragment가 destroy되지 않고 stop 상태에 머물러 있음
 * onPause -> onStop
 
 <img width="432" alt="image" src="https://user-images.githubusercontent.com/69494230/181679511-6f7c043e-bd13-4cb8-8f44-ecc8f780ed7c.png">
 
-### 3. Navigation을 사용하여 두 번째 프래그먼트에서 첫 번째 프래그먼트로 돌아왔을 때
+### 3. Navigation을 사용하여 두 번째 프래그먼트에서 첫 번째 프래그먼트로 돌아왔을 때 라이프 사이클 변화
 * destroy는 되지 않았지만 onViewCreated부터 다시 실행된다
 * onViewCreated -> onStart -> onResume
 
 <img width="536" alt="image" src="https://user-images.githubusercontent.com/69494230/181679661-ca6a87fd-6647-4602-9820-71579560a1c4.png">
 
-### 4. 액티비티를 완전히 닫았을 때
+### 4. 액티비티를 완전히 닫았을 때 라이프 사이클 변화
 * Activity를 완전히 닫아야 Fragment가 Destroy된다
 * onPause -> onStop -> onDestroy
 
