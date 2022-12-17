@@ -37,6 +37,7 @@
     "core-js": "2.4.1",
     "elem-dataset": "1.1.1",
     "katex": "0.7.1",
+    "lodash": "^4.17.21",
     "process-nextick-args": "^2.0.1",
     "rxjs": "5.4.1",
     "util-deprecate": "^1.0.2",
