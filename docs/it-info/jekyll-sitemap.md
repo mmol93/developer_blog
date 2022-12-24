@@ -4,6 +4,14 @@ title: jekyll 블로그 sitemap 작성하는 방법
 parent: IT 및 개발관련정보
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}"
+}
+</script>
+
 # 개요
 
 jekyll로 만든 정적 블로그의 경우 sitemap을 간단하게 만들 수 있습니다.
